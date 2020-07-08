@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_above="@id/frame_bar"
+        android:background="@drawable/bg_txt"
+        android:id="@+id/text_score"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:text="1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+      android:layout_centerInParent="true"
+        android:id="@+id/frame_bar"
+        android:background="@drawable/frame"
+        android:layout_width="320dp"
+        android:layout_height="150dp">
+
+        <LinearLayout
+
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.hafsa.finalproject.machinslotgame.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+            </com.hafsa.finalproject.machinslotgame.ImageViewScrolling.ImageViewScrolling>
+
+            <com.hafsa.finalproject.machinslotgame.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+            </com.hafsa.finalproject.machinslotgame.ImageViewScrolling.ImageViewScrolling>
+
+            <com.hafsa.finalproject.machinslotgame.ImageViewScrolling.ImageViewScrolling
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+            </com.hafsa.finalproject.machinslotgame.ImageViewScrolling.ImageViewScrolling>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/frame_bar"
+        android:layout_toRightOf="@id/frame_bar"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/up" />
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_down"
+        android:src="@drawable/down"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
